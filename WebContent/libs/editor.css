@@ -1,0 +1,221 @@
+
+#components
+{
+	min-height: 600px;
+}
+#target
+{
+	min-height: 200px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+#target .component
+{
+	border: 1px solid #fff;
+}
+#temp
+{
+	width: 500px;
+	background: white;
+	border: 1px dotted #ccc;
+	border-radius: 10px;
+}
+
+.popover-content form
+{
+	margin: 0 auto;
+	width: 213px;
+}
+.popover-content form .btn
+{
+	margin-right: 10px;
+}
+#source
+{
+	min-height: 500px;
+}
+.s-win
+{
+	border: 1px dashed #A9A9A9;
+	/*height: 100%;*/
+}
+.mouse{
+	box-shadow: 0 0 5px #778899 inset;
+}
+.click-red{
+	box-shadow: 0 0 5px red inset;
+}
+
+/*table在小屏中加滚动条  S*/
+.table-scrollable
+{
+	/*border: 1px solid #dddddd;*/
+	margin: 10px 0 !important;
+	overflow-x: auto;
+	overflow-y: auto;
+	width: 100%;
+	height: 150px;
+}
+.list-group{
+    margin-bottom:0px;
+}
+.list-group-item
+{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+    background-color: inherit;
+}
+.form-horizontal .form-group
+{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+/*
+.form-horizontal .control-label {
+    text-align: left;
+}*/
+
+.col-sm-1
+{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.c-indent
+{
+	margin-left:5px;
+    margin-top:10px;
+}
+
+.font-bold 
+{
+	font-weight:bold;
+}
+.form_inline_style{
+	padding-right:0px;
+	padding-top:8px;
+}
+
+.con4{
+     width: 200px;
+     height: auto;
+     overflow: hidden;
+     color: #FFFFFF;
+     position: relative;
+}
+.con4 .btn1{
+     width: 75%;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background: #ccc;
+     display: block;
+     font-size: 16px;
+     border-radius: 5px;
+     
+}
+.con4 .btn2{
+     width: 25%;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background: red;
+     display: block;
+     font-size: 16px;
+     border-radius: 5px;
+     
+}
+.upload{
+     float: left;
+     position: relative;
+}
+.upload_pic{
+     display: block;
+     width: 100%;
+     height: 40px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     opacity: 0;
+     border-radius: 5px;
+}
+.picture{
+  border: 1px dashed #000;
+  width:195px ;
+  height:85px;
+  text-align: center;
+  line-height: 85px;
+  color: #000;
+}
+.c-toolbar{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: none;
+    z-index: 11;
+}
+.c-toolbar-icon{
+}
+.c-content{
+    min-height:20px;
+}
+.table-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.table-row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.table-row div{
+    padding: 1px;
+}
+.c-tip{
+   word-wrap: break-word; 
+}
+
+.col-sm-0, .col-xs-0{
+    width: 0;
+    height: 0;
+    float: left;
+}
+
+.button_style button{
+    width:28px;
+}
+.c-title{
+  text-align:right;
+}
+.c-calculator {
+    /* 在 bootstrap....css中*/
+}
+::-webkit-color-swatch { height:21px; width:100%; position:relative; left: 0px; top:-5px;border: none; }
+::-moz-color-swatch { height:21px; width:100%; position:relative; left: 0px; top:0px;border: none; }
+input[type = range] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    z-index: 1!important;
+}
+input[type = range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #ACD0F4;
+    border-radius: 50%; /*外观设置为圆形*/
+}
+input[type = range]::-moz-range-thumb {
+    -moz-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #ACD0F4;
+    border-radius: 50%; /*外观设置为圆形*/
+}
+.c-range-value{
+    font-weight: bold;
+    color:#fff;
+    background: #ACD0F4;
+}

@@ -1,0 +1,8 @@
+.rdb-panel {
+    margin-top:  10px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 6px;
+    border: 1px solid #DCC896;
+    background: rgba(250, 240, 210, 0.5);
+}
