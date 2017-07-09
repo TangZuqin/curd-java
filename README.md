@@ -1,3 +1,4 @@
 # curd-java
 ## java 1.8
-## tomcat 7.0
+## tomcat 9.0
+## mysql 5.7
