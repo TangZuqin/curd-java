@@ -22,7 +22,7 @@ public class BasicController extends AppController {
 			e.printStackTrace();
 		}
 		
-		Base.open("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/jt?useUnicode=true&characterEncoding=UTF-8", "root", "qweqwe");
+		Base.open("com.mysql.jdbc.Driver", "jdbc:mysql://localhost:3306/jk?useUnicode=true&characterEncoding=UTF-8", "root", "qweqwe");
 	}
 		
 	public Object[] toArray(List <Model> inList)

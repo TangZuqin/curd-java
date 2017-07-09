@@ -35,7 +35,7 @@
 	<table id="medicine">
 		<thead>
 		<tr>
-			<th data-field="state" data-radio="true" data-align="center"></th>
+			<th data-field="state" data-checkbox="true" data-align="center"></th>
 			<th data-field="name" data-align="center">药品名称</th>
 			<th data-field="strenthen" data-align="center">规格</th>
 			<th data-field="factory" data-align="center">出厂厂商</th>
@@ -63,7 +63,7 @@
 						<div class="col-sm-6">
 							<input id="strenthen" class="requireInfo form-control"/>
 						</div>
-						<label class="col-sm-2 control-label">批准文号：</label>
+						<label class="col-sm-2 control-label">	：</label>
 						<div class="col-sm-6">
 							<input id="ano" class="requireInfo form-control" type="text"/>
 						</div>
@@ -91,7 +91,7 @@
 </div>
 
 	<script type="text/javascript">
-		apiURL = 'http://localhost/YYY';
+		apiURL = 'http://localhost:8080/YYY';
 		$(function() {
 			$('#medicine').bootstrapTable({
 				url : apiURL + '/medicine/search',
@@ -180,9 +180,14 @@
 
 		function deleteOptions() {
 			var selections = $('#medicine').bootstrapTable('getSelections');
+			var ids=[];
+			for ( var i=0;i<selections.length;i++){
+				ids.push(selections[i].id);
+			}
+			ids=ids.toString();
 			confirm('确认删除此类药品？', function() {
 				$.get(apiURL + '/medicine/remove', {
-					ids : selections[0].id
+					ids : ids
 				}, function(res) {
 					console.log(res);
 					if (res.code == 0) {

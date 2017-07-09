@@ -60,9 +60,12 @@ public class MedicineController extends BasicController {
 	}
 
 	public void remove() {
-		int id = Integer.parseInt(param("ids"));
-		Med.delete("ID=?", id);
-
+		String[] ids = param("ids").split(",");
+		for(int i=0;i<ids.length;i++)
+		{
+			if(!Med.where("ID = ?", ids[i]).isEmpty())
+				Med.delete("ID = ?", ids[i]);
+		}
 		Map<String, Object> rs = new HashMap<String, Object>();
 		rs.put("code", 0);
 		toJSON(rs);
